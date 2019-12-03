@@ -1,0 +1,21 @@
+<ion-header>
+    <ion-toolbar class="greenBD">
+        <ion-title>Nombre del grupo</ion-title>
+    </ion-toolbar>
+</ion-header>
+
+<ion-content>
+    <ion-list>
+        <ion-item *ngFor="let i of pre">
+            <ion-label position="floating">{{i.descripcion}}</ion-label>
+            <ion-input [(ngModel)]="i.calf"></ion-input>
+        </ion-item>
+
+
+    </ion-list>
+    <ion-fab vertical="bottom" (click)="send()" horizontal="end" slot="fixed">
+        <ion-fab-button class="orangeB">
+            <ion-icon name="send"></ion-icon>
+        </ion-fab-button>
+    </ion-fab>
+</ion-content>

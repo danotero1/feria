@@ -1,0 +1,33 @@
+<ion-header>
+
+
+    <ion-toolbar class="greenBD">
+        <ion-title>
+            Grupos de evaluación
+        </ion-title>
+        <!-- <ion-buttons slot="start">
+            <ion-menu-button class="orangeB" autoHide="false"></ion-menu-button>
+        </ion-buttons> -->
+        <ion-button slot="end" class="orangeB" (click)="salir()" routerLinkActive="router-link-active">Salir</ion-button>
+    </ion-toolbar>
+</ion-header>
+
+<ion-content>
+
+    <ion-list>
+        <ion-label> </ion-label>
+    </ion-list>
+
+    <ion-list *ngFor="let i of grupos">
+
+        <ion-item detail class="inputO" (click)="group(i.id_formulario)">
+            <ion-label>{{i.nombre_grupo}}</ion-label>
+
+        </ion-item>
+
+    </ion-list>
+
+
+
+
+</ion-content>

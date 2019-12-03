@@ -1,0 +1,7 @@
+{
+  "name": "feria",
+  "integrations": {
+    "cordova": {}
+  },
+  "type": "angular"
+}

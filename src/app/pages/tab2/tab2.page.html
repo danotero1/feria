@@ -1,0 +1,77 @@
+<ion-content>
+    <ion-slides pager="true">
+
+        <ion-slide>
+            <ion-list>
+                <ion-item>
+                    <!-- <ion-img src="../assets/img/mejor.jpg"></ion-img> -->
+                    <ion-grid>
+                        <ion-row>
+                            <ion-col size="4" class="organgeT">Nombre del grupo</ion-col>
+                            <ion-col size="4" class="organgeT" style="text-align:center;"># grupo</ion-col>
+                            <ion-col size="4" class="organgeT" style="text-align:center;">Puntuación total</ion-col>
+                        </ion-row>
+                    </ion-grid>
+                    <br>
+
+                </ion-item>
+                <ion-item *ngFor="let i of tabla">
+                    <ion-grid>
+                        <ion-row>
+                            <ion-col>{{i.descripcion}}</ion-col>
+                            <ion-col style="text-align:center;">{{i.grupo}}</ion-col>
+                            <ion-col style="text-align:center;">{{i.puntaje}}</ion-col>
+                        </ion-row>
+                    </ion-grid>
+
+                </ion-item>
+                <ion-item>
+                    <h2>Mejor proyecto</h2>
+                </ion-item>
+                <ion-item>
+                    <p>Actualamente el mejor grupo debido a su calficación es el:<b><b> {{mayor.grupo}}</b></b> con su proyecto <b> {{mayor.descripcion}}</b> </p>
+
+
+                </ion-item>
+            </ion-list>
+            <br>
+
+        </ion-slide>
+        <ion-slide>
+            <ion-list>
+                <ion-item>
+                    <ion-img class="primero" src="../assets/img/primero.jpg"></ion-img>
+                </ion-item>
+                <ion-item>
+                    <h2>Mejor proyecto primer semestre</h2>
+                </ion-item>
+                <ion-item>
+                    <p>Actualamente el mejor grupo debido a su calficación es: <b>{{primero.grupo}}</b> con su proyecto <b> {{primero.descripcion}}</b></p>
+
+
+                </ion-item>
+            </ion-list>
+
+        </ion-slide>
+        <ion-slide>
+            <ion-list>
+                <ion-item>
+                    <ion-img class="ultimo" src="../assets/img/ultimo.jpg"></ion-img>
+                </ion-item>
+                <ion-item>
+                    <h2>Mejor proyecto ultimo semestre</h2>
+                </ion-item>
+                <ion-item>
+                    <p>Actualamente el mejor grupo debido a su calficación es:<b>{{ultimo.grupo}}</b> con su proyecto <b>{{ultimo.descripcion}}</b> </p>
+
+
+                </ion-item>
+            </ion-list>
+
+        </ion-slide>
+    </ion-slides>
+
+
+
+
+</ion-content>
